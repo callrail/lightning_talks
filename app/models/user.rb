@@ -60,7 +60,6 @@ class User < ApplicationRecord
       user.last_name = auth.info.last_name
       user.bio = auth.info.description
       user.avatar_url = auth.extra.raw_info.avatar_url
-      user.oauth_token = auth.credentials.token
     end
   end
 end
